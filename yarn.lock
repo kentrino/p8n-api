@@ -12,6 +12,46 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@buf/bufbuild_protovalidate.bufbuild_es@npm:2.1.0-20240508200655-46a4cf4ba109.1":
+  version: 2.1.0-20240508200655-46a4cf4ba109.1
+  resolution: "@buf/bufbuild_protovalidate.bufbuild_es@npm:2.1.0-20240508200655-46a4cf4ba109.1"
+  peerDependencies:
+    "@bufbuild/protobuf": ^2.1.0
+  checksum: 10c0/6bbfec4766f713faacf4a0f254ee6e745685aec7c44f5026665ed4f2c748fdbeff942d51f0101155b79292f76967af802e1eed6c9ce6c81c477265f404a985b5
+  languageName: node
+  linkType: hard
+
+"@buf/gnostic_gnostic.bufbuild_es@npm:2.1.0-20230414000709-087bc8072ce4.1":
+  version: 2.1.0-20230414000709-087bc8072ce4.1
+  resolution: "@buf/gnostic_gnostic.bufbuild_es@npm:2.1.0-20230414000709-087bc8072ce4.1"
+  peerDependencies:
+    "@bufbuild/protobuf": ^2.1.0
+  checksum: 10c0/167016f0d6646f1c3b51d9da7e7ee566b845f52c83f110580bf61168eb653290025c3ca471a764fd0abea153a4da1a2cefb555cffde7c2563b0462ac7caf2e35
+  languageName: node
+  linkType: hard
+
+"@buf/googleapis_googleapis.bufbuild_es@npm:2.1.0-20240510200701-09703837a2ed.1":
+  version: 2.1.0-20240510200701-09703837a2ed.1
+  resolution: "@buf/googleapis_googleapis.bufbuild_es@npm:2.1.0-20240510200701-09703837a2ed.1"
+  peerDependencies:
+    "@bufbuild/protobuf": ^2.1.0
+  checksum: 10c0/9780c8550b01b69879e1c809762b436a9bdd63e0b66209175623690e3cfa7aeea2909bdf94cf5d698f58003606e41912a38d40b5cf0ce61cca89914186eb7a02
+  languageName: node
+  linkType: hard
+
+"@buf/pocketsign_apis.bufbuild_es@npm:2.1.0-20240515110038-1ecbbd319c93.1":
+  version: 2.1.0-20240515110038-1ecbbd319c93.1
+  resolution: "@buf/pocketsign_apis.bufbuild_es@npm:2.1.0-20240515110038-1ecbbd319c93.1"
+  dependencies:
+    "@buf/bufbuild_protovalidate.bufbuild_es": "npm:2.1.0-20240508200655-46a4cf4ba109.1"
+    "@buf/gnostic_gnostic.bufbuild_es": "npm:2.1.0-20230414000709-087bc8072ce4.1"
+    "@buf/googleapis_googleapis.bufbuild_es": "npm:2.1.0-20240510200701-09703837a2ed.1"
+  peerDependencies:
+    "@bufbuild/protobuf": ^2.1.0
+  checksum: 10c0/b97622a6e242cf34e2e3b4cf81b13bec1bee9f1db4741096362ef72a5f73a7263a49409bb95614dd91c02ac4979b3bf579405d6244f1791e7d3ffc22a79d0dcd
+  languageName: node
+  linkType: hard
+
 "@eslint-community/eslint-utils@npm:^4.2.0, @eslint-community/eslint-utils@npm:^4.4.0":
   version: 4.4.0
   resolution: "@eslint-community/eslint-utils@npm:4.4.0"
@@ -2396,6 +2436,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "jpki-debug@workspace:."
   dependencies:
+    "@buf/pocketsign_apis.bufbuild_es": "npm:2.1.0-20240515110038-1ecbbd319c93.1"
     "@types/node": "npm:^20"
     "@types/react": "npm:^18"
     "@types/react-dom": "npm:^18"

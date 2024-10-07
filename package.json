@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@buf/pocketsign_apis.bufbuild_es": "2.1.0-20240515110038-1ecbbd319c93.1",
     "next": "14.2.14",
     "react": "^18",
     "react-dom": "^18"
