@@ -12,43 +12,259 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@buf/bufbuild_protovalidate.bufbuild_es@npm:2.1.0-20240508200655-46a4cf4ba109.1":
-  version: 2.1.0-20240508200655-46a4cf4ba109.1
-  resolution: "@buf/bufbuild_protovalidate.bufbuild_es@npm:2.1.0-20240508200655-46a4cf4ba109.1"
-  peerDependencies:
-    "@bufbuild/protobuf": ^2.1.0
-  checksum: 10c0/6bbfec4766f713faacf4a0f254ee6e745685aec7c44f5026665ed4f2c748fdbeff942d51f0101155b79292f76967af802e1eed6c9ce6c81c477265f404a985b5
-  languageName: node
-  linkType: hard
-
-"@buf/gnostic_gnostic.bufbuild_es@npm:2.1.0-20230414000709-087bc8072ce4.1":
-  version: 2.1.0-20230414000709-087bc8072ce4.1
-  resolution: "@buf/gnostic_gnostic.bufbuild_es@npm:2.1.0-20230414000709-087bc8072ce4.1"
-  peerDependencies:
-    "@bufbuild/protobuf": ^2.1.0
-  checksum: 10c0/167016f0d6646f1c3b51d9da7e7ee566b845f52c83f110580bf61168eb653290025c3ca471a764fd0abea153a4da1a2cefb555cffde7c2563b0462ac7caf2e35
-  languageName: node
-  linkType: hard
-
-"@buf/googleapis_googleapis.bufbuild_es@npm:2.1.0-20240510200701-09703837a2ed.1":
-  version: 2.1.0-20240510200701-09703837a2ed.1
-  resolution: "@buf/googleapis_googleapis.bufbuild_es@npm:2.1.0-20240510200701-09703837a2ed.1"
-  peerDependencies:
-    "@bufbuild/protobuf": ^2.1.0
-  checksum: 10c0/9780c8550b01b69879e1c809762b436a9bdd63e0b66209175623690e3cfa7aeea2909bdf94cf5d698f58003606e41912a38d40b5cf0ce61cca89914186eb7a02
-  languageName: node
-  linkType: hard
-
-"@buf/pocketsign_apis.bufbuild_es@npm:2.1.0-20240515110038-1ecbbd319c93.1":
-  version: 2.1.0-20240515110038-1ecbbd319c93.1
-  resolution: "@buf/pocketsign_apis.bufbuild_es@npm:2.1.0-20240515110038-1ecbbd319c93.1"
+"@biomejs/biome@npm:^1.9.3":
+  version: 1.9.3
+  resolution: "@biomejs/biome@npm:1.9.3"
   dependencies:
-    "@buf/bufbuild_protovalidate.bufbuild_es": "npm:2.1.0-20240508200655-46a4cf4ba109.1"
-    "@buf/gnostic_gnostic.bufbuild_es": "npm:2.1.0-20230414000709-087bc8072ce4.1"
-    "@buf/googleapis_googleapis.bufbuild_es": "npm:2.1.0-20240510200701-09703837a2ed.1"
+    "@biomejs/cli-darwin-arm64": "npm:1.9.3"
+    "@biomejs/cli-darwin-x64": "npm:1.9.3"
+    "@biomejs/cli-linux-arm64": "npm:1.9.3"
+    "@biomejs/cli-linux-arm64-musl": "npm:1.9.3"
+    "@biomejs/cli-linux-x64": "npm:1.9.3"
+    "@biomejs/cli-linux-x64-musl": "npm:1.9.3"
+    "@biomejs/cli-win32-arm64": "npm:1.9.3"
+    "@biomejs/cli-win32-x64": "npm:1.9.3"
+  dependenciesMeta:
+    "@biomejs/cli-darwin-arm64":
+      optional: true
+    "@biomejs/cli-darwin-x64":
+      optional: true
+    "@biomejs/cli-linux-arm64":
+      optional: true
+    "@biomejs/cli-linux-arm64-musl":
+      optional: true
+    "@biomejs/cli-linux-x64":
+      optional: true
+    "@biomejs/cli-linux-x64-musl":
+      optional: true
+    "@biomejs/cli-win32-arm64":
+      optional: true
+    "@biomejs/cli-win32-x64":
+      optional: true
+  bin:
+    biome: bin/biome
+  checksum: 10c0/20cede5918c6a21d2f6ee4306e2bf395cb9ea4baef68e4f91b7fa3735102a626b565cdc1d4d21ad76faacc1fdf8fd23bdda563bb80906a777ba0bfd2189f41c9
+  languageName: node
+  linkType: hard
+
+"@biomejs/cli-darwin-arm64@npm:1.9.3":
+  version: 1.9.3
+  resolution: "@biomejs/cli-darwin-arm64@npm:1.9.3"
+  conditions: os=darwin & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@biomejs/cli-darwin-x64@npm:1.9.3":
+  version: 1.9.3
+  resolution: "@biomejs/cli-darwin-x64@npm:1.9.3"
+  conditions: os=darwin & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@biomejs/cli-linux-arm64-musl@npm:1.9.3":
+  version: 1.9.3
+  resolution: "@biomejs/cli-linux-arm64-musl@npm:1.9.3"
+  conditions: os=linux & cpu=arm64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@biomejs/cli-linux-arm64@npm:1.9.3":
+  version: 1.9.3
+  resolution: "@biomejs/cli-linux-arm64@npm:1.9.3"
+  conditions: os=linux & cpu=arm64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@biomejs/cli-linux-x64-musl@npm:1.9.3":
+  version: 1.9.3
+  resolution: "@biomejs/cli-linux-x64-musl@npm:1.9.3"
+  conditions: os=linux & cpu=x64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@biomejs/cli-linux-x64@npm:1.9.3":
+  version: 1.9.3
+  resolution: "@biomejs/cli-linux-x64@npm:1.9.3"
+  conditions: os=linux & cpu=x64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@biomejs/cli-win32-arm64@npm:1.9.3":
+  version: 1.9.3
+  resolution: "@biomejs/cli-win32-arm64@npm:1.9.3"
+  conditions: os=win32 & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@biomejs/cli-win32-x64@npm:1.9.3":
+  version: 1.9.3
+  resolution: "@biomejs/cli-win32-x64@npm:1.9.3"
+  conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@buf/bufbuild_protovalidate.bufbuild_es@npm:1.10.0-20240508200655-46a4cf4ba109.1":
+  version: 1.10.0-20240508200655-46a4cf4ba109.1
+  resolution: "@buf/bufbuild_protovalidate.bufbuild_es@npm:1.10.0-20240508200655-46a4cf4ba109.1"
   peerDependencies:
-    "@bufbuild/protobuf": ^2.1.0
-  checksum: 10c0/b97622a6e242cf34e2e3b4cf81b13bec1bee9f1db4741096362ef72a5f73a7263a49409bb95614dd91c02ac4979b3bf579405d6244f1791e7d3ffc22a79d0dcd
+    "@bufbuild/protobuf": ^1.10.0
+  checksum: 10c0/572e404b94e5a0036166608597e5aa3a5276dabba59d573823a2191ce18c76035bec0e60c042ac47963f07e62627bd93eff5c7457b466f4cced9c44000f6de8d
+  languageName: node
+  linkType: hard
+
+"@buf/bufbuild_protovalidate.bufbuild_es@npm:1.8.0-20240508200655-46a4cf4ba109.1":
+  version: 1.8.0-20240508200655-46a4cf4ba109.1
+  resolution: "@buf/bufbuild_protovalidate.bufbuild_es@npm:1.8.0-20240508200655-46a4cf4ba109.1"
+  peerDependencies:
+    "@bufbuild/protobuf": ^1.8.0
+  checksum: 10c0/5f6f94345a2525b2a4f4e705aff8c2999e80e17c5ddc76e43cedc445d7732772cee65605b3e347cca1cf083a14cf79abde5a5893017df728b501cda00c58497a
+  languageName: node
+  linkType: hard
+
+"@buf/bufbuild_protovalidate.connectrpc_es@npm:1.5.0-20240508200655-46a4cf4ba109.1":
+  version: 1.5.0-20240508200655-46a4cf4ba109.1
+  resolution: "@buf/bufbuild_protovalidate.connectrpc_es@npm:1.5.0-20240508200655-46a4cf4ba109.1"
+  dependencies:
+    "@buf/bufbuild_protovalidate.bufbuild_es": "npm:1.10.0-20240508200655-46a4cf4ba109.1"
+  peerDependencies:
+    "@connectrpc/connect": ^1.5.0
+  checksum: 10c0/3ca05b2c000bc530a39824c56b4d6802b91c4dcfcd64c273cd78de9fb05fbd4b3c7eacebbaa09ad5c6bbd8b4f25233eacd205c6b5919d9b8104d9e249636d42c
+  languageName: node
+  linkType: hard
+
+"@buf/gnostic_gnostic.bufbuild_es@npm:1.10.0-20230414000709-087bc8072ce4.1":
+  version: 1.10.0-20230414000709-087bc8072ce4.1
+  resolution: "@buf/gnostic_gnostic.bufbuild_es@npm:1.10.0-20230414000709-087bc8072ce4.1"
+  peerDependencies:
+    "@bufbuild/protobuf": ^1.10.0
+  checksum: 10c0/e7118a0aed7cf9bb763f700393d643566af884ad8b0b54cefc09869d4a726521704a1fefb6e2389c2badbc2342f187bff763a0d68ce630793a101d05b019851c
+  languageName: node
+  linkType: hard
+
+"@buf/gnostic_gnostic.bufbuild_es@npm:1.8.0-20230414000709-087bc8072ce4.1":
+  version: 1.8.0-20230414000709-087bc8072ce4.1
+  resolution: "@buf/gnostic_gnostic.bufbuild_es@npm:1.8.0-20230414000709-087bc8072ce4.1"
+  peerDependencies:
+    "@bufbuild/protobuf": ^1.8.0
+  checksum: 10c0/ddb4bb83d89eb99637c5799f52e599c245623d03492a82958e78d30a67c52b924bcdbdcf0957a89e69449021cb8010a9a8bc495c614b4f1158071e4f82d2d9ab
+  languageName: node
+  linkType: hard
+
+"@buf/gnostic_gnostic.connectrpc_es@npm:1.5.0-20230414000709-087bc8072ce4.1":
+  version: 1.5.0-20230414000709-087bc8072ce4.1
+  resolution: "@buf/gnostic_gnostic.connectrpc_es@npm:1.5.0-20230414000709-087bc8072ce4.1"
+  dependencies:
+    "@buf/gnostic_gnostic.bufbuild_es": "npm:1.10.0-20230414000709-087bc8072ce4.1"
+  peerDependencies:
+    "@connectrpc/connect": ^1.5.0
+  checksum: 10c0/98895555c4df5aadf47dd8cce470b5fecf14f2b107ef918d8948467c435fa798c406d9169733795520d294e6fff8714078215eaf1f8bded068240a094663db17
+  languageName: node
+  linkType: hard
+
+"@buf/googleapis_googleapis.bufbuild_es@npm:1.10.0-20240510200701-09703837a2ed.1":
+  version: 1.10.0-20240510200701-09703837a2ed.1
+  resolution: "@buf/googleapis_googleapis.bufbuild_es@npm:1.10.0-20240510200701-09703837a2ed.1"
+  peerDependencies:
+    "@bufbuild/protobuf": ^1.10.0
+  checksum: 10c0/e8c4eeb83f50ff484d9c0787501001332d8129dad22607178741a7de775e606038d78004642cdaf54726ecca8fccf19688781c6b15f724cf1529ab4d5e3f622f
+  languageName: node
+  linkType: hard
+
+"@buf/googleapis_googleapis.bufbuild_es@npm:1.8.0-20240510200701-09703837a2ed.1":
+  version: 1.8.0-20240510200701-09703837a2ed.1
+  resolution: "@buf/googleapis_googleapis.bufbuild_es@npm:1.8.0-20240510200701-09703837a2ed.1"
+  peerDependencies:
+    "@bufbuild/protobuf": ^1.8.0
+  checksum: 10c0/9258da6576e31dd2c4b14577eaaa4fdb4ac2d9adcd144081c9e3f46611b572f693905237fc5cfc3b6377041ece2ff662a1fc8b0480a09115f6f127b7a00b7dc1
+  languageName: node
+  linkType: hard
+
+"@buf/googleapis_googleapis.connectrpc_es@npm:1.5.0-20240510200701-09703837a2ed.1":
+  version: 1.5.0-20240510200701-09703837a2ed.1
+  resolution: "@buf/googleapis_googleapis.connectrpc_es@npm:1.5.0-20240510200701-09703837a2ed.1"
+  dependencies:
+    "@buf/googleapis_googleapis.bufbuild_es": "npm:1.10.0-20240510200701-09703837a2ed.1"
+  peerDependencies:
+    "@connectrpc/connect": ^1.5.0
+  checksum: 10c0/83abf83532e365ae31b8620e8f96ebe4f0b4b3c08e59f798c8cac7c1b52f5de6d97cb93447bd0f8c6c80948837e66a2031c50a622808aec4abb4dc17d3ae7db3
+  languageName: node
+  linkType: hard
+
+"@buf/pocketsign_apis.bufbuild_es@npm:1.10.0-20240515110038-1ecbbd319c93.1":
+  version: 1.10.0-20240515110038-1ecbbd319c93.1
+  resolution: "@buf/pocketsign_apis.bufbuild_es@npm:1.10.0-20240515110038-1ecbbd319c93.1"
+  dependencies:
+    "@buf/bufbuild_protovalidate.bufbuild_es": "npm:1.10.0-20240508200655-46a4cf4ba109.1"
+    "@buf/gnostic_gnostic.bufbuild_es": "npm:1.10.0-20230414000709-087bc8072ce4.1"
+    "@buf/googleapis_googleapis.bufbuild_es": "npm:1.10.0-20240510200701-09703837a2ed.1"
+  peerDependencies:
+    "@bufbuild/protobuf": ^1.10.0
+  checksum: 10c0/067cbb4c5aee5b173d2850da53f76cb5062877ca7e3442907ac5310c41688a56da3d1c4135f6857b349456f6bec61df17490c8ff5cdebea080b81633033e6fd4
+  languageName: node
+  linkType: hard
+
+"@buf/pocketsign_apis.bufbuild_es@npm:1.8.0-20240515110038-1ecbbd319c93.1":
+  version: 1.8.0-20240515110038-1ecbbd319c93.1
+  resolution: "@buf/pocketsign_apis.bufbuild_es@npm:1.8.0-20240515110038-1ecbbd319c93.1"
+  dependencies:
+    "@buf/bufbuild_protovalidate.bufbuild_es": "npm:1.8.0-20240508200655-46a4cf4ba109.1"
+    "@buf/gnostic_gnostic.bufbuild_es": "npm:1.8.0-20230414000709-087bc8072ce4.1"
+    "@buf/googleapis_googleapis.bufbuild_es": "npm:1.8.0-20240510200701-09703837a2ed.1"
+  peerDependencies:
+    "@bufbuild/protobuf": ^1.8.0
+  checksum: 10c0/5200e74127d94cea3c71777d1a43203ccb9477c450812ec9c483bfee5a109fc92ebdc1d4f5a9ad48eaed39d27e481e30836167302228ef280b5812ed665e38e0
+  languageName: node
+  linkType: hard
+
+"@buf/pocketsign_apis.connectrpc_es@npm:1.5.0-20240515110038-1ecbbd319c93.1":
+  version: 1.5.0-20240515110038-1ecbbd319c93.1
+  resolution: "@buf/pocketsign_apis.connectrpc_es@npm:1.5.0-20240515110038-1ecbbd319c93.1"
+  dependencies:
+    "@buf/bufbuild_protovalidate.connectrpc_es": "npm:1.5.0-20240508200655-46a4cf4ba109.1"
+    "@buf/gnostic_gnostic.connectrpc_es": "npm:1.5.0-20230414000709-087bc8072ce4.1"
+    "@buf/googleapis_googleapis.connectrpc_es": "npm:1.5.0-20240510200701-09703837a2ed.1"
+    "@buf/pocketsign_apis.bufbuild_es": "npm:1.10.0-20240515110038-1ecbbd319c93.1"
+  peerDependencies:
+    "@connectrpc/connect": ^1.5.0
+  checksum: 10c0/09e90111f1b05cd7c3e426f549c8aefe80959aa2aaded7fe26130953d64b1d52ea2168af7de8ad8013f580b22728facbdbac41ab3e8c91dd76acb0c363bc2a27
+  languageName: node
+  linkType: hard
+
+"@bufbuild/protobuf@npm:^1.8.0":
+  version: 1.10.0
+  resolution: "@bufbuild/protobuf@npm:1.10.0"
+  checksum: 10c0/5487b9c2e63846d0e3bde4d025cc77ae44a22166a5d6c184df0da5581e1ab6d66dd115af0ccad814576dcd011bb1b93989fb0ac1eb4ae452979bb8b186693ba0
+  languageName: node
+  linkType: hard
+
+"@connectrpc/connect-node@npm:^1.5.0":
+  version: 1.5.0
+  resolution: "@connectrpc/connect-node@npm:1.5.0"
+  dependencies:
+    undici: "npm:^5.28.4"
+  peerDependencies:
+    "@bufbuild/protobuf": ^1.10.0
+    "@connectrpc/connect": 1.5.0
+  checksum: 10c0/4124a8ece0fcb26290d5f0fe7e39cdabde19efe091d843528b7439c412ff313dda718762cbbd93043783f7c6ee4ea8b0c2afc0e2813e5bd69c518ba1ee0ea9f0
+  languageName: node
+  linkType: hard
+
+"@connectrpc/connect-web@npm:^1.5.0":
+  version: 1.5.0
+  resolution: "@connectrpc/connect-web@npm:1.5.0"
+  peerDependencies:
+    "@bufbuild/protobuf": ^1.10.0
+    "@connectrpc/connect": 1.5.0
+  checksum: 10c0/5cfdaf318af8208385895b5ef0c176264a913df5500b3ecd59532e073d671744e1de30a97dde95d33d59bc3d7abdc42a290948167fbd5324fcaf7c3dbea95662
+  languageName: node
+  linkType: hard
+
+"@connectrpc/connect@npm:^1.5.0":
+  version: 1.5.0
+  resolution: "@connectrpc/connect@npm:1.5.0"
+  peerDependencies:
+    "@bufbuild/protobuf": ^1.10.0
+  checksum: 10c0/8a9a37366b7c5373d689e43cf30c059960daf601a7aade4262b2a6eec35763ea972c5350a609126e69c138e9559796cea7795cd1a276bee7fb342588339864f0
   languageName: node
   linkType: hard
 
@@ -91,6 +307,13 @@ __metadata:
   version: 8.57.1
   resolution: "@eslint/js@npm:8.57.1"
   checksum: 10c0/b489c474a3b5b54381c62e82b3f7f65f4b8a5eaaed126546520bf2fede5532a8ed53212919fed1e9048dcf7f37167c8561d58d0ba4492a4244004e7793805223
+  languageName: node
+  linkType: hard
+
+"@fastify/busboy@npm:^2.0.0":
+  version: 2.1.1
+  resolution: "@fastify/busboy@npm:2.1.1"
+  checksum: 10c0/6f8027a8cba7f8f7b736718b013f5a38c0476eea67034c94a0d3c375e2b114366ad4419e6a6fa7ffc2ef9c6d3e0435d76dd584a7a1cbac23962fda7650b579e3
   languageName: node
   linkType: hard
 
@@ -2436,7 +2659,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "jpki-debug@workspace:."
   dependencies:
-    "@buf/pocketsign_apis.bufbuild_es": "npm:2.1.0-20240515110038-1ecbbd319c93.1"
+    "@biomejs/biome": "npm:^1.9.3"
+    "@buf/pocketsign_apis.bufbuild_es": "npm:1.8.0-20240515110038-1ecbbd319c93.1"
+    "@buf/pocketsign_apis.connectrpc_es": "npm:1.5.0-20240515110038-1ecbbd319c93.1"
+    "@bufbuild/protobuf": "npm:^1.8.0"
+    "@connectrpc/connect": "npm:^1.5.0"
+    "@connectrpc/connect-node": "npm:^1.5.0"
+    "@connectrpc/connect-web": "npm:^1.5.0"
     "@types/node": "npm:^20"
     "@types/react": "npm:^18"
     "@types/react-dom": "npm:^18"
@@ -2448,6 +2677,7 @@ __metadata:
     react-dom: "npm:^18"
     tailwindcss: "npm:^3.4.1"
     typescript: "npm:^5"
+    zod: "npm:^3.23.8"
   languageName: unknown
   linkType: soft
 
@@ -4043,6 +4273,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"undici@npm:^5.28.4":
+  version: 5.28.4
+  resolution: "undici@npm:5.28.4"
+  dependencies:
+    "@fastify/busboy": "npm:^2.0.0"
+  checksum: 10c0/08d0f2596553aa0a54ca6e8e9c7f45aef7d042c60918564e3a142d449eda165a80196f6ef19ea2ef2e6446959e293095d8e40af1236f0d67223b06afac5ecad7
+  languageName: node
+  linkType: hard
+
 "unique-filename@npm:^3.0.0":
   version: 3.0.0
   resolution: "unique-filename@npm:3.0.0"
@@ -4213,5 +4452,12 @@ __metadata:
   version: 0.1.0
   resolution: "yocto-queue@npm:0.1.0"
   checksum: 10c0/dceb44c28578b31641e13695d200d34ec4ab3966a5729814d5445b194933c096b7ced71494ce53a0e8820685d1d010df8b2422e5bf2cdea7e469d97ffbea306f
+  languageName: node
+  linkType: hard
+
+"zod@npm:^3.23.8":
+  version: 3.23.8
+  resolution: "zod@npm:3.23.8"
+  checksum: 10c0/8f14c87d6b1b53c944c25ce7a28616896319d95bc46a9660fe441adc0ed0a81253b02b5abdaeffedbeb23bdd25a0bf1c29d2c12dd919aef6447652dd295e3e69
   languageName: node
   linkType: hard

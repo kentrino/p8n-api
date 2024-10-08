@@ -9,12 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@buf/pocketsign_apis.bufbuild_es": "2.1.0-20240515110038-1ecbbd319c93.1",
+    "@buf/pocketsign_apis.bufbuild_es": "1.8.0-20240515110038-1ecbbd319c93.1",
+    "@buf/pocketsign_apis.connectrpc_es": "1.5.0-20240515110038-1ecbbd319c93.1",
+    "@bufbuild/protobuf": "^1.8.0",
+    "@connectrpc/connect": "^1.5.0",
+    "@connectrpc/connect-node": "^1.5.0",
+    "@connectrpc/connect-web": "^1.5.0",
     "next": "14.2.14",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.9.3",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
