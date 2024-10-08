@@ -50,7 +50,7 @@ export async function POST(request: Request) {
         // デフォルトはCRL。確実に当日分の失効情報を確認したい場合はOSCPを使うと良い
         // cf. https://docs.p8n.app/docs/verify/guide/api/check-method
         checkMethod: CertificateStatus_CheckMethod.CRL,
-        // 利用者識別
+        // リクエスト時に `identify_user` を `true` にした場合、CertificateContentが返却される
         identifyUser: true,
       },
       {
