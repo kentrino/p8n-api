@@ -1,3 +1,4 @@
+import { TypedResponse } from "@/util/TypedResponse"
 import {
   CertificateContent_JPKICardDigitalSignatureContent,
   CertificateStatus_CheckMethod,
@@ -15,7 +16,7 @@ const bodySchema = z.object({
   document: z.string().nullish(),
 })
 
-export async function POST(request: Request) {
+export async function POST(request: Request): Promise<TypedResponse> {
   const token = process.env.POCKET_SIGN_API_KEY
   if (!token) {
     return Response.json({ success: false, message: "Missing token" }, { status: 500 })
@@ -85,6 +86,10 @@ export async function POST(request: Request) {
         message: `success`,
       })
     }
+    return Response.json({
+      success: false,
+      message: `CertificateContent has unexpected type: ${value.getType().typeName}`,
+    })
   } catch (e) {
     return Response.json(
       {
